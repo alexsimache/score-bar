@@ -18,9 +18,21 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "removeComments": true,
+    "noImplicitAny": false,
+    "baseUrl": "src"
   },
   "include": [
     "src"
-  ]
+  ],
+  "paths": {
+    "styles/*": ["./styles/*"],
+    "components/*": ["./components/*"],
+    "pages/*": ["./pages/*"],
+    "modules/*": ["./modules/*"],
+    "interfaces/*": ["./interfaces/*"],
+    "mock/*": ["./mock/*"],
+    "assets/*": ["./assets/*"],
+  }
 }
